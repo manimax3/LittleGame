@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include "SFML\Graphics.hpp"
+#include "Scene.h"
+#include "StartScene.h"
 
 #define DEBUG
 
@@ -18,6 +20,7 @@ public:
 	void start();
 private:
 	sf::RenderWindow *m_Window;
+	Scene* scene;
 	sf::Clock timer;
 	bool focus = true;
 #ifdef DEBUG

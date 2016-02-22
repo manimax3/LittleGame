@@ -12,7 +12,7 @@ public:
 	Scene() {};
 	~Scene() {};
 
-	virtual void update(sf::Time &elapsed) = 0;
+	virtual void update(const sf::Time &elapsed) = 0;
 	virtual void render(sf::RenderWindow *window) = 0;
 
 	//Check if finished before

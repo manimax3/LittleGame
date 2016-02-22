@@ -15,6 +15,9 @@ Game::~Game()
 void Game::start()
 {
 	m_Window = new sf::RenderWindow(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), GAME_NAME);
+	m_Window->clear(sf::Color(0,0,0,255));
+	m_Window->setVerticalSyncEnabled(true);
+	scene = new StartScene();
 	this->run();
 }
 
@@ -67,8 +70,14 @@ void Game::update(const sf::Time &elapsed)
 	ticks++;
 #endif
 
+	scene->update(elapsed);
 
-
+	if (scene->finished)
+	{
+		Scene* temp = scene->swap();
+		delete scene;
+		scene = temp;
+	}
 
 }
 
@@ -78,9 +87,9 @@ void Game::render(sf::RenderWindow *window)
 	frames++;
 #endif
 
-
-
-
+	m_Window->clear(sf::Color(0, 0, 150, 255));
+	scene->render(m_Window);
+	m_Window->display();
 }
 
 void Game::pollEvents()
