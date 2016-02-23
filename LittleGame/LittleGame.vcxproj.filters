@@ -15,25 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\StartScene.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="StartScene.cpp">
+    <ClCompile Include="src\scene\GameScene.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="src\Game.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Scene.h">
+    <ClInclude Include="src\scene\Scene.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="StartScene.h">
+    <ClInclude Include="src\scene\StartScene.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="src\scene\GameScene.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\font\arial.ttf" />
   </ItemGroup>
 </Project>

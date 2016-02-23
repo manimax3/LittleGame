@@ -1,2 +1,12 @@
-﻿  Game.cpp
-  LittleGame.vcxproj -> C:\Users\Maximilian\Desktop\LittleGame\Debug\LittleGame.exe
+﻿Der Buildvorgang wurde am 23.02.2016 14:51:48 gestartet.
+     1>Projekt "Z:\C++\Projekte\LittleGame\LittleGame\LittleGame.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>Link:
+         Z:\Programme\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\C++\Projekte\LittleGame\Debug\LittleGame.exe" /INCREMENTAL /NOLOGO /LIBPATH:Z:\C++\Projekte\LittleGame\Dependencies\SFML2\lib "sfml-main-d.lib" "sfml-graphics-d.lib" "sfml-system-d.lib" "sfml-window-d.lib" freetype.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"Z:\C++\Projekte\LittleGame\Debug\LittleGame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\C++\Projekte\LittleGame\Debug\LittleGame.lib" /MACHINE:X86 Debug\Game.obj
+         Debug\main.obj
+         Debug\StartScene.obj
+         LittleGame.vcxproj -> Z:\C++\Projekte\LittleGame\Debug\LittleGame.exe
+     1>Die Erstellung von Projekt "Z:\C++\Projekte\LittleGame\LittleGame\LittleGame.vcxproj" ist abgeschlossen (Build Ziel(e)).
+
+Der Buildvorgang wurde erfolgreich ausgeführt.
+
+Verstrichene Zeit 00:00:00.34

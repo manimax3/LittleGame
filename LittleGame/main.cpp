@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Game.h"
+#include "src\Game.h"
 
 
 int main()
@@ -8,5 +8,5 @@ int main()
 	game.start();
 
 
-	system("PAUSE");
+
 }
