@@ -1,27 +1,7 @@
-﻿Der Buildvorgang wurde am 23.02.2016 16:01:35 gestartet.
-     1>Projekt "Z:\C++\Projekte\LittleGame\LittleGame\LittleGame.vcxproj" auf Knoten "2", Build Ziel(e).
-     1>ClCompile:
-         Z:\Programme\VisualStudio\VC\bin\CL.exe /c /IZ:\C++\Projekte\LittleGame\Dependencies\SFML2\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp src\Game.cpp src\scene\StartScene.cpp
-         main.cpp
-         Game.cpp
-         StartScene.cpp
-     1>src\scene\StartScene.cpp(22): warning C4996: 'sf::Text::setColor': wurde als veraltet deklariert
-         Z:\C++\Projekte\LittleGame\Dependencies\SFML2\include\SFML/Graphics/Text.hpp(177): note: Siehe Deklaration von "sf::Text::setColor"
-     1>src\scene\StartScene.cpp(28): warning C4996: 'sf::Text::setColor': wurde als veraltet deklariert
-         Z:\C++\Projekte\LittleGame\Dependencies\SFML2\include\SFML/Graphics/Text.hpp(177): note: Siehe Deklaration von "sf::Text::setColor"
-       Link:
-         Z:\Programme\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\C++\Projekte\LittleGame\Release\LittleGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:Z:\C++\Projekte\LittleGame\Dependencies\SFML2\lib "sfml-main.lib" "sfml-graphics.lib" "sfml-system.lib" "sfml-window.lib" freetype.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"Z:\C++\Projekte\LittleGame\Release\LittleGame.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\C++\Projekte\LittleGame\Release\LittleGame.lib" /MACHINE:X86 /SAFESEH Release\GameScene.obj
-         Release\Game.obj
-         Release\main.obj
-         Release\StartScene.obj
-         Code wird generiert.
-         2 of 95 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
-           0 functions were new in current compilation
-           1 functions had inline decision re-evaluated but remain unchanged
-         Codegenerierung ist abgeschlossen.
-         LittleGame.vcxproj -> Z:\C++\Projekte\LittleGame\Release\LittleGame.exe
-     1>Die Erstellung von Projekt "Z:\C++\Projekte\LittleGame\LittleGame\LittleGame.vcxproj" ist abgeschlossen (Build Ziel(e)).
-
-Der Buildvorgang wurde erfolgreich ausgeführt.
-
-Verstrichene Zeit 00:00:02.54
+﻿  Player.cpp
+  Code wird generiert.
+  Codegenerierung ist abgeschlossen.
+  1 of 105 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  LittleGame.vcxproj -> C:\Users\Maximilian\Desktop\LittleGame\Release\LittleGame.exe

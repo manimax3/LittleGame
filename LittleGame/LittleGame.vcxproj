@@ -148,16 +148,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\entity\Player.cpp" />
     <ClCompile Include="src\scene\GameScene.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\scene\StartScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\entity\Entity.h" />
+    <ClInclude Include="src\entity\Player.h" />
     <ClInclude Include="src\scene\GameScene.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\scene\Scene.h" />
     <ClInclude Include="src\scene\StartScene.h" />
+    <ClInclude Include="src\world\world.h" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="res\font\arial.ttf" />
