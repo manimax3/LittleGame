@@ -43,6 +43,11 @@ void StartScene::update(const sf::Time &elapsed)
 		finished = true;
 }
 
+void StartScene::handleInput(const sf::Event &event)
+{
+
+}
+
 Scene* StartScene::swap()
 {
 	return new GameScene();

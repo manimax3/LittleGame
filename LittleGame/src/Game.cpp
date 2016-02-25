@@ -104,5 +104,7 @@ void Game::pollEvents()
 		if (event.type == sf::Event::GainedFocus)
 			focus = true;
 			
+		scene->handleInput(event);
+
 	}
 }
