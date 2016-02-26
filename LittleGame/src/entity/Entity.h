@@ -1,5 +1,7 @@
 #pragma once
+#include "../util/variables.h"
 #include "SFML\Graphics.hpp"
+#include <iostream>
 
 class Entity
 {

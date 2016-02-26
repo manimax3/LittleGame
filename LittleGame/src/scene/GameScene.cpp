@@ -1,6 +1,6 @@
 #include "GameScene.h"
 
-#include "../entity/Player.h"
+#include "../entity/player/Player.h"
 
 GameScene::GameScene()
 {
@@ -10,6 +10,7 @@ GameScene::GameScene()
 void GameScene::update(const sf::Time& elapsed)
 {
 	player.update(elapsed);
+	CollideHandler::instance().update();
 }
 
 void GameScene::render(sf::RenderWindow *window)

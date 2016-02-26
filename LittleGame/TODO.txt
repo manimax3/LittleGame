@@ -1,0 +1,16 @@
+TODO:
+	- Entity Handler (updates and manages requests towards all entitys) Singleton?
+	- World class every ingame class is handled by world:
+		- Background
+		- Sound and Music
+	- Projectiles Different types?
+		- Remove weird init part and reduce static usage
+	- Asteriods
+	- Collision Tests between ingame objects -> Entity Handler Requests?
+	- Enemies? AI? Different Types?
+	- UI -> General UI and Health Bars over entities;
+	- Lighting
+	- Resource Managing and accssing Thor? Singleton?
+		- Player.png
+		- projec.jpeg
+	- Collideable Interface -> so world can check for collisions

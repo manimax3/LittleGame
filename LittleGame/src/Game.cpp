@@ -26,6 +26,8 @@ void Game::run()
 
 	double usPerTick = 1000000 / 60;
 	double delta = 0; 
+
+	//Time between frames parsed to update() -> weird
 	sf::Time elapsed;
 
 	timer.restart();

@@ -1,14 +1,13 @@
 #pragma once
 
+#include "util\variables.h"
 #include <iostream>
 #include "SFML\Graphics.hpp"
 #include "scene\StartScene.h"
 
+#ifdef GLOBAL_DEBUG
 #define DEBUG
-
-#define GAME_NAME "Little Game Test"
-#define GAME_HEIGHT 800
-#define GAME_WIDTH GAME_HEIGHT
+#endif
 
 class Game
 {

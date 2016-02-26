@@ -27,7 +27,19 @@
     <ClCompile Include="src\scene\GameScene.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="src\entity\Player.cpp">
+    <ClCompile Include="src\entity\projectile\Projectile.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\projectile\ProjectileHandler.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\player\Player.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\World.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\collision\CollideHandler.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,17 +56,35 @@
     <ClInclude Include="src\scene\GameScene.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\world\world.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="src\entity\Entity.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\entity\Player.h">
+    <ClInclude Include="src\util\variables.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entity\projectile\Projectile.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entity\projectile\ProjectileHandler.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entity\player\Player.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\World.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\collision\Collideable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\collision\CollideHandler.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Font Include="res\font\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
   </ItemGroup>
 </Project>

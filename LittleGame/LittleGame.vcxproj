@@ -115,11 +115,13 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\SFML2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,23 +150,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\entity\Player.cpp" />
+    <ClCompile Include="src\entity\player\Player.cpp" />
+    <ClCompile Include="src\entity\projectile\Projectile.cpp" />
+    <ClCompile Include="src\entity\projectile\ProjectileHandler.cpp" />
     <ClCompile Include="src\scene\GameScene.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\scene\StartScene.cpp" />
+    <ClCompile Include="src\world\collision\CollideHandler.cpp" />
+    <ClCompile Include="src\world\World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\entity\Entity.h" />
-    <ClInclude Include="src\entity\Player.h" />
+    <ClInclude Include="src\entity\player\Player.h" />
+    <ClInclude Include="src\entity\projectile\Projectile.h" />
+    <ClInclude Include="src\entity\projectile\ProjectileHandler.h" />
     <ClInclude Include="src\scene\GameScene.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\scene\Scene.h" />
     <ClInclude Include="src\scene\StartScene.h" />
-    <ClInclude Include="src\world\world.h" />
+    <ClInclude Include="src\util\variables.h" />
+    <ClInclude Include="src\world\collision\Collideable.h" />
+    <ClInclude Include="src\world\collision\CollideHandler.h" />
+    <ClInclude Include="src\world\World.h" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="res\font\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

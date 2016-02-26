@@ -1,7 +1,8 @@
 #pragma once
 #include "Scene.h"
 
-#include "../entity/Player.h"
+#include "../entity/player/Player.h"
+#include "../world/collision/CollideHandler.h"
 class GameScene :
 	public Scene
 {
