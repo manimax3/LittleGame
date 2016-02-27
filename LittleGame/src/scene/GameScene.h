@@ -1,8 +1,7 @@
 #pragma once
 #include "Scene.h"
 
-#include "../entity/player/Player.h"
-#include "../world/collision/CollideHandler.h"
+#include "../entity/EntityHandler.h"
 class GameScene :
 	public Scene
 {
@@ -16,6 +15,6 @@ public:
 
 	virtual Scene* swap() override;
 private:
-	Player player;
+	EntityHandler handler;
 };
 

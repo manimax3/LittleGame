@@ -5,8 +5,6 @@ using namespace std;
 
 void Player::render(sf::RenderWindow *window)
 {
-
-	projecHandler.render(window);
 	window->draw(sprite);
 }
 
@@ -37,8 +35,6 @@ void Player::update(const sf::Time &elapsed)
 	position += velocity;
 	sprite.setPosition(position);
 	sprite.setRotation(angle);
-
-	projecHandler.update(elapsed);
 }
 
 void Player::handleInput(const sf::Event &event)
@@ -78,14 +74,15 @@ void Player::handleInput(const sf::Event &event)
 	else if (event.type == sf::Event::MouseButtonPressed)
 	{
 		projecHandler.spawnProjectile(position,
-									  sf::Vector2f(cos((angle - 95) * DEG_IN_RAD) ,
-												   sin((angle - 95) * DEG_IN_RAD)),
+									  sf::Vector2f(cos((angle - 90) * DEG_IN_RAD) ,
+												   sin((angle - 90) * DEG_IN_RAD)),
 									  5 * 60);
 	}
 
 }
 
-Player::Player()
+Player::Player(ProjectileHandler &projec)
+	: projecHandler(projec)
 {
 	image.loadFromFile("./res/pics/player.png");
 	sprite.setTexture(image);

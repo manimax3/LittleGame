@@ -9,18 +9,17 @@ GameScene::GameScene()
 
 void GameScene::update(const sf::Time& elapsed)
 {
-	player.update(elapsed);
-	CollideHandler::instance().update();
+	handler.update(elapsed);
 }
 
 void GameScene::render(sf::RenderWindow *window)
 {
-	player.render(window);
+	handler.render(window);
 }
 
 void GameScene::handleInput(const sf::Event &event)
 {
-	player.handleInput(event);
+	handler.handleInput(event);
 }
 
 Scene* GameScene::swap()

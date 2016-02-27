@@ -150,6 +150,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\entity\asteriod\Asteriod.cpp" />
+    <ClCompile Include="src\entity\asteriod\AsteriodHandler.cpp" />
+    <ClCompile Include="src\entity\EntityHandler.cpp" />
     <ClCompile Include="src\entity\player\Player.cpp" />
     <ClCompile Include="src\entity\projectile\Projectile.cpp" />
     <ClCompile Include="src\entity\projectile\ProjectileHandler.cpp" />
@@ -157,11 +160,12 @@
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\scene\StartScene.cpp" />
-    <ClCompile Include="src\world\collision\CollideHandler.cpp" />
-    <ClCompile Include="src\world\World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\entity\asteriod\Asteriod.h" />
+    <ClInclude Include="src\entity\asteriod\AsteriodHandler.h" />
     <ClInclude Include="src\entity\Entity.h" />
+    <ClInclude Include="src\entity\EntityHandler.h" />
     <ClInclude Include="src\entity\player\Player.h" />
     <ClInclude Include="src\entity\projectile\Projectile.h" />
     <ClInclude Include="src\entity\projectile\ProjectileHandler.h" />
@@ -170,9 +174,6 @@
     <ClInclude Include="src\scene\Scene.h" />
     <ClInclude Include="src\scene\StartScene.h" />
     <ClInclude Include="src\util\variables.h" />
-    <ClInclude Include="src\world\collision\Collideable.h" />
-    <ClInclude Include="src\world\collision\CollideHandler.h" />
-    <ClInclude Include="src\world\World.h" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="res\font\arial.ttf" />

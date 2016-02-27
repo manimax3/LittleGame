@@ -36,10 +36,13 @@
     <ClCompile Include="src\entity\player\Player.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="src\world\World.cpp">
+    <ClCompile Include="src\entity\EntityHandler.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="src\world\collision\CollideHandler.cpp">
+    <ClCompile Include="src\entity\asteriod\Asteriod.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\asteriod\AsteriodHandler.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,13 +74,13 @@
     <ClInclude Include="src\entity\player\Player.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\world\World.h">
+    <ClInclude Include="src\entity\EntityHandler.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\world\collision\Collideable.h">
+    <ClInclude Include="src\entity\asteriod\AsteriodHandler.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="src\world\collision\CollideHandler.h">
+    <ClInclude Include="src\entity\asteriod\Asteriod.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

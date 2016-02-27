@@ -9,7 +9,7 @@ ProjectileHandler::ProjectileHandler()
 	projSpr.setScale(sf::Vector2f(0.3, 0.3));
 }
 
-void ProjectileHandler::spawnProjectile(const sf::Vector2f &pos, const sf::Vector2f &dir, float maxLifeTime)
+uint ProjectileHandler::spawnProjectile(const sf::Vector2f &pos, const sf::Vector2f &dir, float maxLifeTime)
 {
 	Projectile proj;
 	proj.position = pos;
@@ -17,12 +17,26 @@ void ProjectileHandler::spawnProjectile(const sf::Vector2f &pos, const sf::Vecto
 	proj.maxLifeTime = maxLifeTime;
 	proj.remainingLifeTime = maxLifeTime;
 	proj.sprite = projSpr;
+	proj.sprite.setOrigin(sf::Vector2f(proj.sprite.getLocalBounds().width / 2, proj.sprite.getLocalBounds().height / 2));
+	if (proj.ID == 0) return 0;
 	projectiles.push_back(proj);
+	return proj.ID;
+}
+
+void ProjectileHandler::removeProjectile(uint ID)
+{
+	//if (projectiles.size() == 0) return;
+	for (auto &it = projectiles.begin(); it != projectiles.end(); ++it) {
+		if (it->ID = ID) {
+			projectiles.erase(it);
+			break;
+		}
+	}
 }
 
 void ProjectileHandler::update(const sf::Time &elapsed)
 {
-	for (auto it = projectiles.begin(); it != projectiles.end(); ++it)
+	for (auto &it = projectiles.begin(); it != projectiles.end(); ++it)
 	{
 		if (projectiles.size() == 0) break;
 		if (it->remainingLifeTime <= 0) {
@@ -36,7 +50,7 @@ void ProjectileHandler::update(const sf::Time &elapsed)
 
 void ProjectileHandler::render(sf::RenderWindow *window)
 {
-	for (auto pro : projectiles)
+	for (auto &pro : projectiles)
 	{
 		if (projectiles.size() == 0) break;
 		pro.render(window);

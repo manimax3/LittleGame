@@ -10,6 +10,7 @@ class Projectile : public Entity
 
 public:
 	inline sf::Vector2f& getPosition() { return position; }
+	uint ID;
 	~Projectile() {}
 private:
 	virtual void update(const sf::Time &elapsed) override;
@@ -20,5 +21,7 @@ private:
 	float maxLifeTime, remainingLifeTime;
 	sf::Sprite sprite;
 
-	Projectile() {}
+	Projectile();
+
+	static uint ID_counter;
 };

@@ -18,3 +18,8 @@ void Projectile::handleInput(const sf::Event &event)
 	return;
 }
 
+Projectile::Projectile()
+{
+	this->ID = ID_counter++;
+}
+uint Projectile::ID_counter = 0;

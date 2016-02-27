@@ -11,7 +11,7 @@ public:
 	virtual void render(sf::RenderWindow *window) override;
 	virtual void handleInput(const sf::Event &event) override;
 
-	Player();
+	Player(ProjectileHandler &projec);
 	~Player();
 
 private:
@@ -20,6 +20,5 @@ private:
 	sf::Vector2f velocity, size, mousePos;
 	float angle;
 	bool up = false, down = false, right = false, left = false;
-
-	ProjectileHandler projecHandler;
+	ProjectileHandler &projecHandler;
 };
