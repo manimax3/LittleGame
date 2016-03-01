@@ -1,9 +1,8 @@
-﻿Der Buildvorgang wurde am 27.02.2016 15:13:46 gestartet.
+﻿Der Buildvorgang wurde am 01.03.2016 18:07:02 gestartet.
      1>Projekt "Z:\C++\Projekte\LittleGame\LittleGame\LittleGame.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
-         Z:\Programme\VisualStudio\VC\bin\CL.exe /c /IZ:\C++\Projekte\LittleGame\Dependencies\SFML2\include /Zi /nologo /W3 /WX- /Ox /Ob2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt src\entity\asteriod\AsteriodHandler.cpp
-         AsteriodHandler.cpp
-     1>src\entity\asteriod\AsteriodHandler.cpp(31): warning C4244: "Initialisierung": Konvertierung von "int" in "float", möglicher Datenverlust
+         Z:\Programme\VisualStudio\VC\bin\CL.exe /c /IZ:\C++\Projekte\LittleGame\Dependencies\SFML2\include /Zi /nologo /W3 /WX- /Ox /Ob2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt src\Game.cpp
+         Game.cpp
        Link:
          Z:\Programme\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\C++\Projekte\LittleGame\Release\LittleGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:Z:\C++\Projekte\LittleGame\Dependencies\SFML2\lib "sfml-main.lib" "sfml-graphics.lib" "sfml-system.lib" "sfml-window.lib" freetype.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"Z:\C++\Projekte\LittleGame\Release\LittleGame.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\C++\Projekte\LittleGame\Release\LittleGame.lib" /MACHINE:X86 /SAFESEH Release\Asteriod.obj
          Release\AsteriodHandler.obj
@@ -16,13 +15,13 @@
          Release\main.obj
          Release\StartScene.obj
          Code wird generiert.
-         3 of 342 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+         2 of 342 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
            0 functions were new in current compilation
-           0 functions had inline decision re-evaluated but remain unchanged
+           1 functions had inline decision re-evaluated but remain unchanged
          Codegenerierung ist abgeschlossen.
          LittleGame.vcxproj -> Z:\C++\Projekte\LittleGame\Release\LittleGame.exe
      1>Die Erstellung von Projekt "Z:\C++\Projekte\LittleGame\LittleGame\LittleGame.vcxproj" ist abgeschlossen (Build Ziel(e)).
 
 Der Buildvorgang wurde erfolgreich ausgeführt.
 
-Verstrichene Zeit 00:00:01.40
+Verstrichene Zeit 00:00:01.51

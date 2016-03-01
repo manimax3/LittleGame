@@ -5,14 +5,7 @@ using namespace sf;
 EntityHandler::EntityHandler()
 	: player(Player(projecHandler)), astroHandler(AsteriodHandler(projecHandler))
 {
-	astroHandler.spawnAsteriod(Vector2f(10, 10));
-	astroHandler.spawnAsteriod(Vector2f(400, 50));
-	astroHandler.spawnAsteriod(Vector2f(200, 60));
-	astroHandler.spawnAsteriod(Vector2f(100, 200));
-	//astroHandler.spawnAsteriod(Vector2f(10, 300));
-	//astroHandler.spawnAsteriod(Vector2f(400, 200));
-	//astroHandler.spawnAsteriod(Vector2f(200, 200));
-	//astroHandler.spawnAsteriod(Vector2f(100, 10));
+
 }
 
 void EntityHandler::update(const Time &elapsed)

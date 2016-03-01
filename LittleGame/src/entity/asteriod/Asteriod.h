@@ -12,10 +12,11 @@ public:
 	virtual void render(sf::RenderWindow *window) override;
 	virtual void handleInput(const sf::Event &event) override {};
 	uint ID;
-protected:
-	float health, maxHealth;
-	sf::Sprite sprite;
 	Asteriod();
+protected:
+	float health, maxHealth, rotation = 0;
+	sf::Sprite sprite;
+	sf::Vector2f velocity;
 private:
 	static uint ID_counter;
 };

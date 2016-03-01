@@ -27,11 +27,11 @@ uint AsteriodHandler::spawnAsteriod(Vector2f pos)
 {
 	Asteriod ast;
 	ast.position = pos;
-	ast.sprite = astSpr;
+	ast.sprite.setTexture(astTex);
 	float scale = (rand() % 10 + 1);
-	ast.health = scale;
-	
+	ast.health = scale + 4;
 	ast.sprite.setScale(Vector2f(scale / 10, scale / 10));
+	ast.sprite.setOrigin(sf::Vector2f(ast.sprite.getLocalBounds().width / 2, ast.sprite.getLocalBounds().height / 2));
 	asteriods.push_back(ast);
 	return ast.ID;
 }
@@ -56,4 +56,11 @@ void AsteriodHandler::update(const Time &elapsed)
 			if (asteriods.size() == 0) break;
 			it->update(elapsed);
 	}
+	ticks++;
+	if (ticks > 5 * 60 && ticks % 300 == 0)
+	{
+		spawnAsteriod(Vector2f(rand() % GAME_WIDTH, rand() % GAME_HEIGHT));
+	}
+
+
 }

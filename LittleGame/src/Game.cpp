@@ -56,7 +56,7 @@ void Game::run()
 		if (second.getElapsedTime().asSeconds() >= 1)
 		{
 			std::cout << "Ticks: " << ticks << " FPS: " << frames << std::endl;
-			std::cout << "UPT: " << second.getElapsedTime().asSeconds() << std::endl;
+			std::cout << "UPT: " << second.getElapsedTime().asSeconds() << "Tick Time: " << elapsed.asSeconds() << std::endl;
 			second.restart();
 			frames = 0;
 			ticks = 0;

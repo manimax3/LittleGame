@@ -21,4 +21,5 @@ public:
 	void render(sf::RenderWindow *window);
 private:
 	ProjectileHandler &projecHandler;
+	uint ticks = 0;
 };
